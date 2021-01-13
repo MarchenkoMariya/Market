@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+.header {
+    background-color: #222222;
+    outline: 1px solid green;
+    color: white;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+img[alt="magnifier"] {
+    margin-left: 40px;
+}
+
+img[alt="human"] {
+    margin-right: 34px;
+}
+
+img[alt="strips"] {
+    margin-right: 34px;
+}
+
+img[alt="circle"] {
+    margin-bottom: 19px;
+}
+
+.promo {
+    background: #f1e4e6;
+}
+
+.promo-wrap {
+    display: flex;
+    width: 1700px;
+    height: 764px;
+}
+
+.wand {
+    margin-top: 335px;
+    margin-left: 64px;
+}
+
+.brand {
+    margin-top: 335px;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.luxerious {
+    margin-top: -52px;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.fashion {
+    text-decoration: none;
+    color: #F16D7F;
+}
+
+.categories {
+    background-color: white;
+}
+
+.products {
+    background-color: white;
+}
+
+.advantage {
+    background: #222222;
+}
