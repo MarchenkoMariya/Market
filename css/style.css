@@ -1,90 +1,354 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-.wrap {
-    width: 1140px;
-    margin: 0 auto;
-    outline: 1px solid red;
-}
-
-.header {
-    background-color: #222222;
-    outline: 1px solid green;
-    color: white;
-}
-
-.header-wrap {
-    display: flex;
-    justify-content: space-between;
-}
-
-img[alt="magnifier"] {
-    margin-left: 40px;
-}
-
-img[alt="human"] {
-    margin-right: 34px;
-}
-
-img[alt="strips"] {
-    margin-right: 34px;
-}
-
-img[alt="circle"] {
-    margin-bottom: 19px;
-}
-
-.promo {
-    background: #f1e4e6;
-}
-
-.promo-wrap {
-    display: flex;
-    width: 1700px;
-    height: 764px;
-}
-
-.wand {
-    margin-top: 335px;
-    margin-left: 64px;
-}
-
-.brand {
-    margin-top: 335px;
-    font-family: Lato;
-    font-style: normal;
-    font-size: 48px;
-    line-height: 58px;
-    color: #222222;
-}
-
-.luxerious {
-    margin-top: -52px;
-    font-family: Lato;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 38px;
-    color: #222222;
-}
-
-.fashion {
-    text-decoration: none;
-    color: #F16D7F;
-}
-
-.categories {
-    background-color: white;
-}
-
-.products {
-    background-color: white;
-}
-
-.advantage {
-    background: #222222;
-}
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .wrap {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        background-color: #222222;
+        outline: 1px solid green;
+        color: white;
+    }
+    
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    img[alt="magnifier"] {
+        margin-left: 40px;
+    }
+    
+    img[alt="human"] {
+        margin-right: 34px;
+    }
+    
+    img[alt="strips"] {
+        margin-right: 34px;
+    }
+    
+    img[alt="circle"] {
+        margin-bottom: 19px;
+    }
+    
+    .promo {
+        background: #f1e4e6;
+    }
+    
+    .promo-wrap {
+        display: flex;
+        width: 1700px;
+        height: 764px;
+    }
+    
+    .wand {
+        margin-top: 335px;
+        margin-left: 64px;
+    }
+    
+    .brand {
+        margin-top: 335px;
+        font-family: Lato;
+        font-style: normal;
+        font-size: 48px;
+        line-height: 58px;
+        color: #222222;
+    }
+    
+    .luxerious {
+        margin-top: -52px;
+        font-family: Lato;
+        font-style: normal;
+        font-size: 32px;
+        line-height: 38px;
+        color: #222222;
+    }
+    
+    .fashion {
+        text-decoration: none;
+        color: #F16D7F;
+    }
+    
+    .categories {
+        background-color: white;
+        margin-top: 64px;
+    }
+    
+    .categories-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    img[alt="clothes"] {
+        margin-top: 30px;
+    }
+    
+    .off {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 105px;
+    }
+    
+    .forwoman {
+        text-decoration: none;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28, 8px;
+        margin-left: 103px;
+        color: #F16D7F;
+    }
+    
+    .woman-wrap {
+        position: relative;
+    }
+    
+    .for-woman {
+        background: rgba(33, 22, 22, 0.7);
+        position: absolute;
+        width: 360px;
+        height: 260px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        display: none;
+    }
+    
+    .woman-wrap:hover .for-woman {
+        display: block;
+    }
+    
+    .hot {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 105px;
+    }
+    
+    .formen {
+        text-decoration: none;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28, 8px;
+        margin-left: 125px;
+        color: #F16D7F;
+    }
+    
+    .bisinessman-wrap {
+        position: relative;
+    }
+    
+    .for-bisinessman {
+        background: rgba(33, 22, 22, 0.7);
+        position: absolute;
+        width: 360px;
+        height: 260px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        display: none;
+    }
+    
+    .bisinessman-wrap:hover .for-bisinessman {
+        display: block;
+    }
+    
+    .arrivals {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 105px;
+    }
+    
+    .forkids {
+        text-decoration: none;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28, 8px;
+        margin-left: 123px;
+        color: #F16D7F;
+    }
+    
+    .child-wrap {
+        position: relative;
+    }
+    
+    .for-child {
+        background: rgba(33, 22, 22, 0.7);
+        position: absolute;
+        width: 360px;
+        height: 260px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        display: none;
+    }
+    
+    .trendy {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 65px;
+    }
+    
+    .accesories {
+        text-decoration: none;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28, 8px;
+        margin-left: 492px;
+        color: #F16D7F;
+    }
+    
+    .child-wrap:hover .for-child {
+        display: block;
+    }
+    
+    .clothes-wrap {
+        position: relative;
+    }
+    
+    .for-clothes {
+        background: rgba(33, 22, 22, 0.7);
+        position: absolute;
+        width: 1142px;
+        height: 180px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 30px;
+        display: none;
+    }
+    
+    .clothes-wrap:hover .for-clothes {
+        display: block;
+    }
+    
+    .products {
+        background-color: white;
+        margin-top: 97px;
+    }
+    
+    .fetured {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+        text-align: center;
+    }
+    
+    .week {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        text-align: center;
+    }
+    
+    .pictures {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    img[alt="product4"],
+    img[alt="product5"],
+    img[alt="product6"] {
+        margin-top: 30px;
+    }
+    
+    img[alt="button"] {
+        margin-left: 469px;
+    }
+    
+    .advantage {
+        height: 341px;
+        background: #222222;
+    }
+    
+    .feture {
+        padding-top: 105px;
+    }
+    
+    .feedback {
+        object-fit: fill;
+        background-size: cover;
+        height: 448px;
+        background-image: url(../img/index/subscribe.png);
+    }
+    
+    .feedback-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    img[alt="photo"] {
+        margin-top: 97px;
+    }
+    
+    img[alt="mail"] {
+        margin-top: 150px;
+    }
+    
+    .footer {
+        height: 79px;
+        background-color: #222224;
+    }
+    
+    .footer-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .copy {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+        margin-top: 20px;
+    }
+    
+    .social {
+        margin-top: 24px;
+    }
