@@ -72,6 +72,10 @@ details summary::-webkit-details-marker {
     display: none;
 }
 
+details:hover {
+    cursor: pointer;
+}
+
 .main {
     Width: 232px;
     Height: 764px;
@@ -216,6 +220,10 @@ img[alt="clothes"] {
     top: 0;
 }
 
+.woman-wrap:hover {
+    transform: scale(1.2);
+}
+
 .hot {
     @include font;
     font-weight: $font-normal;
@@ -237,6 +245,10 @@ img[alt="clothes"] {
 
 .bisinessman-wrap {
     position: relative;
+}
+
+.bisinessman-wrap:hover {
+    transform: scale(1.2);
 }
 
 .for-bisinessman {
@@ -272,6 +284,10 @@ img[alt="clothes"] {
     position: relative;
 }
 
+.child-wrap:hover {
+    transform: scale(1.2);
+}
+
 .for-child {
     position: absolute;
     width: 360px;
@@ -303,6 +319,10 @@ img[alt="clothes"] {
 
 .clothes-wrap {
     position: relative;
+}
+
+.clothes-wrap:hover {
+    transform: scale(1.2);
 }
 
 .for-clothes {
@@ -365,9 +385,73 @@ img[alt="clothes"] {
     color: $color-button;
 }
 
-img[alt="product4"],
-img[alt="product5"],
-img[alt="product6"] {
+.screen {
+    width: 139px;
+    height: 44px;
+    background: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    margin-top: 202px;
+    margin-left: 111px;
+    animation: anime 2s infinite alternate;
+}
+
+@keyframes anime {
+    0% {
+        background-color: #228B22;
+    }
+    30% {
+        background-color: #00FFFF;
+    }
+    60% {
+        background-color: #0000FF;
+    }
+    90% {
+        background-color: #FF00FF;
+    }
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+.product-1,
+.product-2,
+.product-3,
+.product-4,
+.product-5,
+.product-6 {
+    position: relative;
+    width: 360px;
+    height: 582px;
+}
+
+.top-screen {
+    width: 360px;
+    height: 420px;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(58, 56, 56, 0.86);
+}
+
+.product-1:hover .top-screen,
+.product-2:hover .top-screen,
+.product-3:hover .top-screen,
+.product-4:hover .top-screen,
+.product-5:hover .top-screen,
+.product-6:hover .top-screen {
+    display: block;
+}
+
+.product-4,
+.product-5,
+.product-6 {
     margin-top: 30px;
 }
 
@@ -383,11 +467,13 @@ img[alt="product6"] {
     justify-content: center;
     margin-left: 465px;
     margin-bottom: 50px;
+    transition: 1s;
 }
 
 .Button_browse:hover {
     background: $color-button;
     color: #FFFFFF;
+    transform: rotate(360deg);
 }
 
 .advantage {
@@ -586,7 +672,16 @@ input:focus {
     position: relative;
 }
 
-.arrow {
+.left-arrow:hover,
+.right-arrow:hover {
+    color: #F16D7F;
+}
+
+.left-arrow,
+.right-arrow {
+    border: none;
+    height: 47px;
+    width: 47px;
     background: rgba(42, 42, 42, 0.15);
 }
 
@@ -745,6 +840,7 @@ img[alt="truck"] {
     line-height: 17px;
     color: #EF5B70;
     padding-top: 10px;
+    background: white;
 }
 
 .first1 {
@@ -883,6 +979,15 @@ summary:focus {
     box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
     display: flex;
     margin-top: 96px;
+}
+
+.crosss {
+    border: none;
+    background: white;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .signature {
@@ -1048,4 +1153,75 @@ hr {
 .feedback-cart {
     border: none;
     margin-top: 129px;
+}
+
+.registration-wrap {
+    display: flex;
+}
+
+.form-registration {
+    margin-top: 63px;
+}
+
+.form-legend {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.radio {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin-top: 31px;
+}
+
+.form-legend-password {
+    margin-top: 33px;
+}
+
+.clarification {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.join {
+    width: 167px;
+    height: 50px;
+    background: #F16D7F;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.loyalty {
+    margin-top: 64px;
+    margin-left: 128px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.registration-feedback {
+    border: none;
+    margin-top: 96px;
 }
