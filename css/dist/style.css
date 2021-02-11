@@ -713,9 +713,17 @@ input:focus {
   background: rgba(42, 42, 42, 0.15);
 }
 
+.left-arrow {
+  float: left;
+}
+
+.right-arrow {
+  float: right;
+}
+
 .photo {
   width: 597px;
-  Height: 724px;
+  height: 724px;
 }
 
 .card-wrap {
@@ -868,6 +876,11 @@ img[alt=truck] {
   Width: 360px;
   Height: 531px;
   position: absolute;
+  margin-top: 25px;
+}
+
+img[alt=big_stripes] {
+  display: none;
 }
 
 .summary {
@@ -917,7 +930,7 @@ summary:focus {
 .sorting {
   display: flex;
   justify-content: center;
-  margin-top: 51px;
+  margin-top: 25px;
 }
 
 .checkbox {
@@ -969,7 +982,6 @@ summary:focus {
 .product8,
 .product9 {
   background: #F8F8F8;
-  padding-left: 16px;
 }
 
 .wrap-card {
@@ -1011,6 +1023,10 @@ summary:focus {
   height: 148px;
   background: #F8F3F4;
   display: flex;
+}
+
+.shopping-wrap {
+  width: 1140px;
 }
 
 .shoppihg-cart {
@@ -1226,6 +1242,10 @@ hr {
   margin-top: 129px;
 }
 
+.shoping-wrap {
+  width: 1140px;
+}
+
 .registration-wrap {
   display: flex;
 }
@@ -1372,6 +1392,7 @@ hr {
 
   .feedback {
     min-height: 625px;
+    border: none;
   }
 
   .feedback-wrap {
@@ -1381,6 +1402,39 @@ hr {
   .feedback-wrap .mail {
     margin-left: 180px;
     margin-top: 50px;
+  }
+
+  .card .product3 {
+    display: none;
+  }
+
+  .choice-wrap .boss {
+    margin-top: 25px;
+  }
+
+  .choice-wrap .sorting {
+    margin-top: 25px;
+  }
+
+  .wrap-card .pages {
+    margin-left: 220px;
+  }
+
+  .product-wrap .product1-woman {
+    display: none;
+  }
+
+  .purchase-wrap {
+    display: block;
+  }
+
+  .purchase-wrap .application {
+    display: flex;
+  }
+
+  .purchase-wrap .rezalt {
+    margin-top: 5px;
+    margin-left: 5px;
   }
 }
 @media all and (max-width: 768px) {
@@ -1515,5 +1569,192 @@ hr {
 
   .footer-left {
     order: 2;
+  }
+
+  .arrivals-wrap {
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .arrivals-wrap .name .new {
+    text-align: center;
+    margin-top: -30px;
+  }
+
+  .arrivals-wrap .way {
+    margin-top: -10px;
+    text-align: center;
+  }
+
+  .choice-wrap .filter > span {
+    display: none;
+  }
+
+  .choice-wrap img[alt=short_stripes] {
+    display: none;
+  }
+
+  .choice-wrap img[alt=big_stripes] {
+    display: block;
+    margin-top: -10px;
+  }
+
+  .choice-wrap .sorting {
+    float: right;
+  }
+
+  .wrap-card {
+    margin-top: 63px;
+  }
+
+  .wrap-card .product1 img,
+.product2 img,
+.product3 img,
+.product4 img,
+.product5 img,
+.product6 img,
+.product7 img,
+.product8 img,
+.product9 img {
+    max-width: 318px;
+    max-height: 580px;
+  }
+
+  .wrap-card .pages {
+    margin-left: 20px;
+  }
+
+  .product {
+    display: flex;
+  }
+
+  .product-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-wrap {
+    display: block;
+  }
+
+  .product-wrap .product1-men {
+    display: none;
+  }
+
+  .product-wrap .product1-woman {
+    display: block;
+  }
+
+  .product-wrap .product1-woman img {
+    width: 319px;
+  }
+
+  .shopping-wrap .shoppihg-cart {
+    margin-left: 60px;
+  }
+
+  .purchase-wrap .cart1 {
+    width: 319px;
+    height: 188px;
+  }
+
+  .purchase-wrap .cart2 {
+    width: 319px;
+    height: 188px;
+  }
+
+  .purchase-wrap .cart1 img {
+    width: 103px;
+    height: 188px;
+  }
+
+  .purchase-wrap .cart1 .signature {
+    width: 216px;
+    max-height: 188px;
+  }
+
+  .purchase-wrap .signature .total {
+    margin-top: -20px;
+  }
+
+  .purchase-wrap .signature .mango {
+    font-size: 16px;
+  }
+
+  .purchase-wrap .signature .total-price {
+    font-size: 14px;
+  }
+
+  .purchase-wrap .signature .total-color {
+    font-size: 14px;
+  }
+
+  .purchase-wrap .signature .total-size {
+    font-size: 14px;
+  }
+
+  .purchase-wrap .signature label {
+    font-size: 14px;
+  }
+
+  .purchase-wrap .cross-cart {
+    margin-left: -30px;
+    margin-top: 5px;
+  }
+
+  .purchase-wrap .cart2 img {
+    width: 103px;
+    height: 188px;
+  }
+
+  .purchase-wrap .cart2 .cross-cart {
+    margin-left: -100px;
+  }
+
+  .purchase-wrap .clear {
+    width: 160px;
+    font-size: 12px;
+  }
+
+  .purchase-wrap .continue {
+    width: 160px;
+    font-size: 12px;
+    margin-left: -3px;
+  }
+
+  .purchase-wrap .application {
+    display: block;
+  }
+
+  .application .application-data {
+    width: 319px;
+  }
+
+  .application .rezalt {
+    width: 315px;
+  }
+
+  .application .rezalt button {
+    margin-left: 20px;
+  }
+
+  .shopping .shoppihg-cart {
+    margin-left: 80px;
+  }
+
+  .registration-wrap .form-registration .application-data {
+    width: 319px;
+  }
+
+  .registration-wrap {
+    display: block;
+  }
+
+  .registration-wrap .loyalty {
+    font-size: 16px;
+    margin: 0;
   }
 }
