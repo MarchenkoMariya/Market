@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index page</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed6e80eef6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,24 +14,48 @@
     <header class="header">
         <div class="wrap header-wrap">
             <div class="logo">
-                <img src="img/index/logo.svg" alt="logo">
-                <a href="#"><img src="img/index/magnifier.svg" alt="magnifier"></a>
+                <a href="#"><img src="img/index/logo.svg" alt="logo"></a>
+                <a href="catalog.html"><img src="img/index/magnifier.svg" alt="magnifier"></a>
             </div>
 
             <div class="account">
-                <a href="#"><img src="img/index/strips.svg" alt="strips"></a>
-                <a href="#"><img src="img/index/human.svg" alt="human"></a>
-                <a href="#"><img src="img/index/basket.svg" alt="basket"></a>
-                <img src="img/index/circle.svg" alt="circle">
+                <details class="details">
+                    <summary class="strips"><img src="img/index/strips.svg" alt="strips"></summary>
+                    <div class="main">
+                        <a href="#" class="cross">&#215;</a>
+                        <p class="menu1">MENU</p>
+                        <ul class="subtitle">MAN
+                            <li><a href="catalog.html">Accessories</a></li>
+                            <li><a href="catalog.html">Bags</a></li>
+                            <li><a href="catalog.html">Denim</a> </li>
+                            <li><a href="catalog.html">T-Shirts</a></li>
+                        </ul>
+                        <ul class="subtitle">WOMAN
+                            <li><a href="catalog.html">Accessories</a> </li>
+                            <li><a href="catalog.html">Jackets & Coats</a> </li>
+                            <li><a href="catalog.html">Polos</a> </li>
+                            <li><a href="catalog.html">T-Shirts</a> </li>
+                            <li><a href="catalog.html">Shirts</a> </li>
+                        </ul>
+                        <ul class="subtitle">KIDS
+                            <li><a href="catalog.html">Accessories</a> </li>
+                            <li><a href="catalog.html">Jackets & Coats</a> </li>
+                            <li><a href="catalog.html">Polos</a> </li>
+                            <li><a href="catalog.html">T-Shirts</a> </li>
+                            <li><a href="catalog.html">Shirts</a> </li>
+                            <li><a href="catalog.html">Bags</a> </li>
+                        </ul>
+                    </div>
+
+                </details>
+                <a href="Registration.html"><img src="img/index/human.svg" alt="human"></a>
+                <a href="cart.html"><img src="img/index/basket.svg" alt="basket"></a>
             </div>
         </div>
     </header>
 
     <section class="promo">
         <div class="wrap promo-wrap">
-            <div class="rectangle">
-                <img src="img/index/Rectangle.png" alt="Rectangle">
-            </div>
 
             <div class="wand">
                 <img src="img/index/wand.png" alt="wand">
@@ -39,36 +64,35 @@
             <div class="words">
                 <p class="brand">THE BRAND</p>
                 <p class="luxerious">OF LUXERIOUS
-                    <a href="#" class="fashion">FASHION</a>
+                    <a href="catalog.html" class="fashion">FASHION</a>
                 </p>
             </div>
-
         </div>
     </section>
 
     <section class="categories">
         <div class="wrap categories-wrap">
-            <div class="woman-wrap">
+            <div class="categorieses woman-wrap">
                 <img src="img/index/woman.png" alt="woman">
                 <div class="for-woman">
                     <p class="off">30% OFF</p>
-                    <a href="#" class="forwoman">FOR WOMEN</a>
+                    <a href="catalog.html" class="forwoman">FOR WOMEN</a>
                 </div>
             </div>
 
-            <div class="bisinessman-wrap">
+            <div class="categorieses bisinessman-wrap">
                 <img src="img/index/bisinessman.png" alt="bisinessman">
                 <div class="for-bisinessman">
                     <p class="hot">HOT DEAL</p>
-                    <a href="#" class="formen">FOR MEN</a>
+                    <a href="catalog.html" class="formen">FOR MEN</a>
                 </div>
             </div>
 
-            <div class="child-wrap">
+            <div class="categorieses child-wrap">
                 <img src="img/index/child.png" alt="child">
                 <div class="for-child">
                     <p class="arrivals">NEW ARRIVALS</p>
-                    <a href="#" class="forkids">FOR KIDS</a>
+                    <a href="catalog.html" class="forkids">FOR KIDS</a>
                 </div>
             </div>
 
@@ -76,7 +100,7 @@
                 <img src="img/index/clothes.png" alt="clothes">
                 <div class="for-clothes">
                     <p class="trendy">LUXIROUS & TRENDY</p>
-                    <a href="#" class="accesories">ACCESORIES</a>
+                    <a href="catalog.html" class="accesories">ACCESORIES</a>
                 </div>
             </div>
         </div>
@@ -89,31 +113,125 @@
                 <p class="week">Shop for items based on what we featured in this week</p>
             </div>
             <div class="pictures">
-                <a href="#"><img src="img/index/product1.png" alt="product1"></a>
-                <a href="#"><img src="img/index/product2.png" alt="product2"></a>
-                <a href="#"><img src="img/index/product3.png" alt="product3"></a>
-                <a href="#"><img src="img/index/product4.png" alt="product4"></a>
-                <a href="#"><img src="img/index/product5.png" alt="product5"></a>
-                <a href="#"><img src="img/index/product6.png" alt="product6"></a>
-            </div>
-            <a href="#"><img src="img/index/Button.svg" alt="button"></a>
+                <div class="product-1">
+                    <img src="img/index/product1.png" alt="product1">
+                    <div class="top-screen">
+                        <button class="screen">
+                            <img src="img/index/basket.svg" alt="basket">
+                            <p class="add-to">Add to Cart</p>
+                        </button>
+                    </div>
+                    <p class="ellery">ELLERY X M'O CAPSULE</p>
+                    <p class="text1">Known for her sculptural takes on traditional <br> tailoring, Australian arbiter of cool Kym Ellery teams <br> up with Moda Operandi.</p>
+                    <p class="price">$52.00</p>
+
+                </div>
+                <div class="product-2">
+                    <a href="#"><img src="img/index/product2.png" alt="product2"></a>
+                    <div class="top-screen">
+                        <button class="screen">
+                            <img src="img/index/basket.svg" alt="basket">
+                            <p class="add-to">Add to Cart</p>
+                        </button>
+                    </div>
+                    <p class="ellery">ELLERY X M'O CAPSULE</p>
+                    <p class="text1">Known for her sculptural takes on traditional <br> tailoring, Australian arbiter of cool Kym Ellery teams <br> up with Moda Operandi.</p>
+                    <p class="price">$52.00</p>
+                </div>
+                <div class="product-3">
+                    <a href="#"><img src="img/index/product3.png" alt="product3"></a>
+                    <div class="top-screen">
+                        <button class="screen">
+                            <img src="img/index/basket.svg" alt="basket">
+                            <p class="add-to">Add to Cart</p>
+                        </button>
+                    </div>
+                    <p class="ellery">ELLERY X M'O CAPSULE</p>
+                    <p class="text1">Known for her sculptural takes on traditional <br> tailoring, Australian arbiter of cool Kym Ellery teams <br> up with Moda Operandi.</p>
+                    <p class="price">$52.00</p>
+                </div>
+                <div class="product-4">
+                    <a href="#"><img src="img/index/product4.png" alt="product4"></a>
+                    <div class="top-screen">
+                        <button class="screen">
+                            <img src="img/index/basket.svg" alt="basket">
+                            <p class="add-to">Add to Cart</p>
+                        </button>
+                    </div>
+                    <p class="ellery">ELLERY X M'O CAPSULE</p>
+                    <p class="text1">Known for her sculptural takes on traditional <br> tailoring, Australian arbiter of cool Kym Ellery teams <br> up with Moda Operandi.</p>
+                    <p class="price">$52.00</p>
+                </div>
+                <div class="product-5">
+                    <a href="#"><img src="img/index/product5.png" alt="product5"></a>
+                    <div class="top-screen">
+                        <button class="screen">
+                            <img src="img/index/basket.svg" alt="basket">
+                            <p class="add-to">Add to Cart</p>
+                        </button>
+                    </div>
+                    <p class="ellery">ELLERY X M'O CAPSULE</p>
+                    <p class="text1">Known for her sculptural takes on traditional <br> tailoring, Australian arbiter of cool Kym Ellery teams <br> up with Moda Operandi.</p>
+                    <p class="price">$52.00</p>
+                </div>
+                <div class="product-6">
+                    <a href="#"><img src="img/index/product6.png" alt="product6"></a>
+                    <div class="top-screen">
+                        <button class="screen">
+                            <img src="img/index/basket.svg" alt="basket">
+                            <p class="add-to">Add to Cart</p>
+                        </button>
+                    </div>
+                    <p class="ellery">ELLERY X M'O CAPSULE</p>
+                    <p class="text1">Known for her sculptural takes on traditional <br> tailoring, Australian arbiter of cool Kym Ellery teams <br> up with Moda Operandi.</p>
+                    <p class="price">$52.00</p>
+                </div>
+
+            </div class="button-catalog">
+            <a href="catalog.html">
+                <button class="Button_browse">
+                    <p class="browse">Browse All Product</p> 
+                 </button>
+            </a>
         </div>
     </section>
 
     <section class="advantage">
         <div class="wrap">
             <div class="feture">
-                <a href="#"><img src="img/index/car.svg" alt="car"></a>
-                <a href="#"><img src="img/index/percent.svg" alt="percent"></a>
-                <a href="#"><img src="img/index/crown.svg" alt="crown"></a>
+                <div class="badges">
+                    <a href="#"><img src="img/index/car.svg" alt="car"></a>
+                    <p class="large">Free Delivery</p>
+                    <p class="small">Worldwide delivery on all. Authorit tively morph <br> next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="badges">
+                    <a href="#"><img src="img/index/percent.svg" alt="percent"></a>
+                    <p class="large">Sales & discounts</p>
+                    <p class="small">Worldwide delivery on all. Authorit tively morph <br> next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="badges">
+                    <a href="#"><img src="img/index/crown.svg" alt="crown"></a>
+                    <p class="large">Quality assurance</p>
+                    <p class="small">Worldwide delivery on all. Authorit tively morph <br> next-generation innov tion with extensive models.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="feedback">
         <div class="wrap feedback-wrap">
-            <img src="img/index/photo.svg" alt="photo">
-            <img src="img/index/mail.svg" alt="mail">
+            <div class="review">
+                <img src="img/index/photo.svg" alt="photo">
+                <p class="wishes">“Vestibulum quis porttitor dui! Quisque <br> viverra nunc mi, <i>a pulvinar purus <br> condimentum“</i></p>
+            </div>
+            <div class="mail">
+                <p class="promotion"><b>SUBSCRIBE</b> <br> FOR OUR NEWLETTER AND PROMOTION</p>
+                <form action="#" class="subscribe"></form>
+                <input class="field" type="email" placeholder="Enter Your Email">
+                <input class="btn" type="submit" value="Subscribe">
+                </form>
+            </div>
+
         </div>
     </section>
 
@@ -123,16 +241,21 @@
                 <p>© 2021 Brand All Rights Reserved.</p>
             </div>
             <div class="social">
-                <a href="#"><img src="img/index/facebook.png" alt="facebook"></a>
-                <a href="#"><img src="img/index/instagram.png" alt="instagram"></a>
-                <a href="#"><img src="img/index/pinterest.png" alt="pinterest"></a>
-                <a href="#"><img src="img/index/twitter.png" alt="twitter"></a>
+                <button>
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button>
+                    <i class="fab fa-instagram"></i>
+                </button>
+                <button>
+                    <i class="fab fa-pinterest-p"></i>
+                </button>
+                <button>
+                    <i class="fab fa-twitter"></i>
+                </button>
             </div>
         </div>
     </footer>
-
-
-
 </body>
 
 </html>
