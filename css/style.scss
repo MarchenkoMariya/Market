@@ -926,6 +926,10 @@
             color: #6F6E6E;
         }
         
+        .product-1 img {
+            position: relative;
+        }
+        
         .product1,
         .product2,
         .product3,
@@ -936,6 +940,7 @@
         .product8,
         .product9 {
             background: #F8F8F8;
+            position: relative;
         }
         
         .wrap-card {
@@ -1276,6 +1281,12 @@
                 position: absolute;
                 margin-left: -140px;
             }
+            .promo-wrap .words .brand {
+                font-size: 44px;
+            }
+            .promo-wrap .words .luxerious {
+                font-size: 24px;
+            }
             .categories-wrap {
                 max-height: 303px;
             }
@@ -1408,9 +1419,8 @@
             .product-wrap {
                 max-width: 363px;
             }
-            .product-wrap img[alt="product1"] {
-                max-width: 319px;
-                max-height: 418px;
+            .product-wrap img {
+                width: 319px;
             }
             .product-wrap .product-1 img,
             .product-2 img,
@@ -1419,11 +1429,9 @@
             .product-5 img,
             .product-6 img {
                 max-width: 319px;
-                max-height: 418px;
             }
             .product-wrap .top-screen {
-                max-width: 319px;
-                max-height: 418px;
+                width: 319px;
             }
             .products-wrap .Button_browse {
                 margin-left: 55px;
